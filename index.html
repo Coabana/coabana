@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es" id="top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coabana — Ingeniería de Datos en Google Cloud</title>
+  <meta name="description" content="Coabana diseña, construye y opera plataformas de datos en Google Cloud: BigQuery, Dataflow, Cloud Composer, Looker, Knowledge Catalog y agentes de IA sobre tus datos." data-i18n-content="meta.desc">
+  <meta name="theme-color" content="#07131d">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coabana — Ingeniería de Datos en Google Cloud">
+  <meta property="og:description" content="Plataformas de datos en Google Cloud: pipelines confiables, analítica clara y agentes de IA sobre tus propios datos.">
+  <meta property="og:url" content="https://coabana.github.io/coabana/">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Coabana",
+    "description": "Estudio de ingeniería de datos especializado en Google Cloud.",
+    "url": "https://coabana.github.io/coabana/",
+    "founder": { "@type": "Person", "name": "Roanny Lamas" },
+    "knowsAbout": ["Data Engineering", "Google Cloud", "BigQuery", "Dataflow", "Cloud Composer", "Looker", "Knowledge Catalog", "Gemini Enterprise Agent Platform"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Fondo decorativo -->
+  <div class="bg-decor" aria-hidden="true">
+    <div class="glow glow-turquoise"></div>
+    <div class="glow glow-coral"></div>
+    <div class="dots"></div>
+  </div>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Coabana — inicio">
+        <svg class="brand-glyph" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="33" cy="13" r="6" fill="var(--coral)"/>
+          <path d="M22 42c0-10-1-18-2-24" stroke="url(#trunkGrad)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 18C14 14 8 14 4 17c6 1 11 3 16 5" fill="none" stroke="var(--turquoise)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M20 18c-2-7-7-10-12-10 4 4 7 8 10 12" fill="none" stroke="var(--turquoise)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M20 18c2-6 7-9 13-8-5 3-8 6-11 10" fill="none" stroke="var(--turquoise)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M20 18c6-2 12 0 15 4-6-1-11-1-15-1" fill="none" stroke="var(--turquoise)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M4 42c4-3 8-3 12 0s8 3 12 0 8-3 12 0" fill="none" stroke="var(--cyan)" stroke-width="2.4" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="trunkGrad" x1="20" y1="18" x2="22" y2="42" gradientUnits="userSpaceOnUse">
+              <stop stop-color="var(--turquoise)"/><stop offset="1" stop-color="var(--cyan)"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="brand-name">coabana</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Secciones">
+        <a href="#services" data-i18n="nav.services">Servicios</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#process" data-i18n="nav.process">Método</a>
+        <a href="#about" data-i18n="nav.about">Fundador</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to English">EN</button>
+        <a class="btn btn-primary btn-small" href="#contact" data-i18n="nav.cta">Hablemos</a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menú" aria-expanded="false" data-i18n-aria-label="nav.menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.badge">Ingeniería de datos · Google Cloud</span>
+          </p>
+          <h1 class="hero-title">
+            <span data-i18n="hero.h1a">Del dato crudo</span><br>
+            <span data-i18n="hero.h1b">a la </span><span class="grad" data-i18n="hero.h1c">decisión.</span>
+          </h1>
+          <p class="hero-sub" data-i18n="hero.sub">
+            Coabana es un estudio de ingeniería de datos especializado en Google Cloud.
+            Diseñamos, construimos y operamos la plataforma que convierte tus datos en resultados:
+            pipelines confiables, analítica clara y agentes de IA sobre tu propia información.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#contact" data-i18n="hero.cta1">Hablemos de tu proyecto</a>
+            <a class="btn btn-ghost" href="#services" data-i18n="hero.cta2">Ver servicios</a>
+          </div>
+          <div class="hero-strip">
+            <span class="strip-label" data-i18n="hero.strip">Construido sobre</span>
+            <ul class="strip-chips">
+              <li>BigQuery</li>
+              <li>Dataflow</li>
+              <li>Cloud Composer</li>
+              <li>Looker</li>
+              <li>Knowledge Catalog</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Escena visual: isla de datos -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="island-card">
+            <div class="island-card-head">
+              <span class="win-dot"></span><span class="win-dot"></span><span class="win-dot"></span>
+              <span class="island-card-title" data-i18n="hero.card">tu-plataforma-de-datos</span>
+            </div>
+            <svg class="island-svg" viewBox="0 0 420 300" fill="none">
+              <!-- sol -->
+              <circle cx="330" cy="56" r="26" fill="var(--coral)" opacity="0.9"/>
+              <circle cx="330" cy="56" r="38" stroke="var(--coral)" stroke-opacity="0.25" stroke-width="2"/>
+              <!-- palma monolínea -->
+              <path d="M150 216c2-34-2-62-8-84" stroke="var(--turquoise)" stroke-width="5" stroke-linecap="round"/>
+              <path d="M142 132c-16-12-34-13-48-5 16 2 30 7 44 14" stroke="var(--turquoise)" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path d="M142 132c-5-19-18-28-34-29 11 9 19 19 26 32" stroke="var(--turquoise)" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path d="M142 132c5-17 19-25 36-23-12 8-21 15-29 26" stroke="var(--turquoise)" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path d="M142 132c17-6 34-2 44 9-15-3-28-3-41-1" stroke="var(--turquoise)" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <!-- isla de datos: rejilla de puntos -->
+              <g fill="var(--cyan)">
+                <circle cx="96" cy="222" r="3" opacity=".9"/><circle cx="120" cy="218" r="3" opacity=".6"/>
+                <circle cx="144" cy="222" r="3" opacity=".9"/><circle cx="168" cy="218" r="3" opacity=".5"/>
+                <circle cx="192" cy="222" r="3" opacity=".8"/><circle cx="108" cy="234" r="3" opacity=".5"/>
+                <circle cx="132" cy="236" r="3" opacity=".8"/><circle cx="156" cy="234" r="3" opacity=".6"/>
+                <circle cx="180" cy="236" r="3" opacity=".9"/><circle cx="124" cy="248" r="3" opacity=".7"/>
+                <circle cx="148" cy="250" r="3" opacity=".5"/><circle cx="172" cy="248" r="3" opacity=".8"/>
+              </g>
+              <!-- flujo de datos hacia el panel -->
+              <path d="M196 210c40-18 76-22 118-14" stroke="url(#flowGrad)" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round" class="flow-line"/>
+              <path d="M196 236c44 6 80 4 120-10" stroke="url(#flowGrad)" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round" class="flow-line flow-line-2"/>
+              <!-- mini dashboard -->
+              <g>
+                <rect x="300" y="150" width="96" height="110" rx="10" fill="var(--panel-2)" stroke="var(--line)"/>
+                <rect x="312" y="166" width="72" height="6" rx="3" fill="var(--cyan)" opacity=".5"/>
+                <rect x="312" y="196" width="10" height="48" rx="3" fill="var(--turquoise)"/>
+                <rect x="328" y="212" width="10" height="32" rx="3" fill="var(--turquoise)" opacity=".75"/>
+                <rect x="344" y="184" width="10" height="60" rx="3" fill="var(--coral)"/>
+                <rect x="360" y="204" width="10" height="40" rx="3" fill="var(--turquoise)" opacity=".55"/>
+                <rect x="376" y="192" width="10" height="52" rx="3" fill="var(--cyan)" opacity=".8"/>
+              </g>
+              <!-- olas -->
+              <path d="M20 272c24-12 48-12 72 0s48 12 72 0 48-12 72 0 48 12 72 0 48-12 72 0" stroke="var(--cyan)" stroke-opacity=".5" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M40 288c20-10 40-10 60 0s40 10 60 0 40-10 60 0 40 10 60 0 40-10 60 0" stroke="var(--turquoise)" stroke-opacity=".3" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <defs>
+                <linearGradient id="flowGrad" x1="196" y1="210" x2="316" y2="210" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="var(--turquoise)"/><stop offset="1" stop-color="var(--coral)"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="float-chip chip-a"><span class="chip-icon">⚡</span><span data-i18n="hero.chip1">Streaming en tiempo real</span></div>
+          <div class="float-chip chip-b"><span class="chip-icon">🛡️</span><span data-i18n="hero.chip2">Datos gobernados</span></div>
+          <div class="float-chip chip-c"><span class="chip-icon">✨</span><span data-i18n="hero.chip3">IA con tus datos</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ LA MARCA ══════════ -->
+    <section class="section" id="brand">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker" data-i18n="brand.kicker">El nombre</p>
+          <h2 data-i18n="brand.title">Una tierra grande y fértil</h2>
+        </div>
+        <div class="brand-grid">
+          <div class="brand-story reveal">
+            <p data-i18n="brand.p1">
+              «Coabana» viene del taíno: gran lugar de tierra fértil — uno de los orígenes que se
+              atribuyen al nombre de Cuba. Nos gusta pensar los datos de la misma manera: una tierra
+              que, bien cultivada, produce.
+            </p>
+            <p data-i18n="brand.p2">
+              Coabana es la marca desde la que Roanny Lamas, Data Engineer especializado en Google Cloud,
+              ofrece servicios de ingeniería de datos de punta a punta: desde la arquitectura inicial
+              hasta la operación diaria de tu plataforma.
+            </p>
+          </div>
+          <div class="brand-pillars">
+            <div class="pillar reveal">
+              <span class="pillar-icon" aria-hidden="true">🌴</span>
+              <h3 data-i18n="brand.b1t">Raíz caribeña, estándar global</h3>
+              <p data-i18n="brand.b1d">Cercanía y claridad al comunicar; rigor de ingeniería al construir.</p>
+            </div>
+            <div class="pillar reveal">
+              <span class="pillar-icon" aria-hidden="true">🎯</span>
+              <h3 data-i18n="brand.b2t">Especialistas, no generalistas</h3>
+              <p data-i18n="brand.b2d">Hacemos una sola cosa: plataformas de datos en Google Cloud. Y la hacemos bien.</p>
+            </div>
+            <div class="pillar reveal">
+              <span class="pillar-icon" aria-hidden="true">🔁</span>
+              <h3 data-i18n="brand.b3t">De punta a punta</h3>
+              <p data-i18n="brand.b3d">De la primera conversación de arquitectura al monitoreo en producción.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="none">
+        <path d="M0 30c60-20 120-20 180 0s120 20 180 0 120-20 180 0 120 20 180 0 120-20 180 0 120 20 180 0 120-20 180 0 120 20 180 0" stroke="var(--line-strong)" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <!-- ══════════ SERVICIOS ══════════ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker" data-i18n="services.kicker">Servicios</p>
+          <h2 data-i18n="services.title">Lo que Coabana hace por tus datos</h2>
+          <p class="section-sub" data-i18n="services.sub">
+            Compromisos claros con entregables concretos — desde una asesoría puntual hasta la plataforma completa.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">🏝️</span>
+            <h3 data-i18n="services.s1t">Plataformas de datos en BigQuery</h3>
+            <p data-i18n="services.s1d">Diseño y construcción de tu warehouse o lakehouse: modelado por capas, formatos abiertos con BigLake, seguridad y costos bajo control desde el día uno.</p>
+            <ul class="card-chips"><li>BigQuery</li><li>BigLake</li><li>Cloud Storage</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">🌊</span>
+            <h3 data-i18n="services.s2t">Pipelines batch y streaming</h3>
+            <p data-i18n="services.s2d">Ingesta y transformación confiables: réplica CDC de tus bases operacionales, eventos en tiempo real y procesamiento a escala.</p>
+            <ul class="card-chips"><li>Dataflow</li><li>Pub/Sub</li><li>Datastream</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">🪢</span>
+            <h3 data-i18n="services.s3t">Orquestación y ELT moderno</h3>
+            <p data-i18n="services.s3d">Flujos orquestados y transformaciones SQL versionadas, testeadas y documentadas — tu plataforma tratada como un producto de software.</p>
+            <ul class="card-chips"><li>Cloud Composer</li><li>Dataform</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">🧭</span>
+            <h3 data-i18n="services.s4t">Gobierno y calidad del dato</h3>
+            <p data-i18n="services.s4d">Catálogo, linaje, glosario de negocio y reglas de calidad automatizadas: cada tabla con dueño y cada métrica con una sola definición.</p>
+            <ul class="card-chips"><li>Knowledge Catalog</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">📊</span>
+            <h3 data-i18n="services.s5t">Analítica y BI</h3>
+            <p data-i18n="services.s5d">Modelos semánticos y dashboards que el negocio usa de verdad, con métricas consistentes en toda la empresa.</p>
+            <ul class="card-chips"><li>Looker</li><li>Looker Studio</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <span class="card-icon" aria-hidden="true">🤖</span>
+            <h3 data-i18n="services.s6t">IA y agentes sobre tus datos</h3>
+            <p data-i18n="services.s6d">Agentes conversacionales y automatizaciones ancladas en tu plataforma: pregunta a tus datos en lenguaje natural, con respuestas gobernadas.</p>
+            <ul class="card-chips"><li>Gemini Enterprise Agent Platform</li><li>BigQuery ML</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ STACK ══════════ -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker" data-i18n="stack.kicker">Herramientas</p>
+          <h2 data-i18n="stack.title">El portafolio de datos de Google Cloud, al día</h2>
+          <p class="section-sub" data-i18n="stack.sub">
+            Google renombra sus productos con frecuencia; en Coabana los seguimos de cerca.
+            Estos son los nombres vigentes — y para qué sirve cada uno.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.g1">Ingesta</h3>
+            <ul>
+              <li><strong>Pub/Sub</strong><span data-i18n="stack.g1a">mensajería y eventos</span></li>
+              <li><strong>Datastream</strong><span data-i18n="stack.g1b">CDC y réplica continua</span></li>
+              <li><strong>Storage Transfer Service</strong><span data-i18n="stack.g1c">cargas masivas</span></li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.g2">Procesamiento</h3>
+            <ul>
+              <li><strong>Dataflow</strong><span data-i18n="stack.g2a">batch y streaming (Apache Beam)</span></li>
+              <li><strong>Dataproc</strong><span data-i18n="stack.g2b">Spark y ecosistema Hadoop</span></li>
+              <li><strong>Dataform</strong><span data-i18n="stack.g2c">ELT con SQL versionado</span></li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.g3">Warehouse y lakehouse</h3>
+            <ul>
+              <li><strong>BigQuery</strong><span data-i18n="stack.g3a">el corazón analítico</span></li>
+              <li><strong>BigLake</strong><span data-i18n="stack.g3b">lakehouse y formatos abiertos</span></li>
+              <li><strong>Cloud Storage</strong><span data-i18n="stack.g3c">data lake</span></li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.g4">Orquestación</h3>
+            <ul>
+              <li><strong>Cloud Composer</strong><span data-i18n="stack.g4a">Airflow gestionado</span></li>
+              <li><strong>Workflows</strong><span data-i18n="stack.g4b">orquestación serverless</span></li>
+              <li><strong>Cloud Scheduler</strong><span data-i18n="stack.g4c">cron gestionado</span></li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.g5">Gobierno</h3>
+            <ul>
+              <li>
+                <strong>Knowledge Catalog</strong><span data-i18n="stack.g5a">catálogo, linaje y calidad</span>
+                <em class="was" data-i18n="stack.g5was">antes Dataplex Universal Catalog</em>
+              </li>
+            </ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="stack.g6">BI y visualización</h3>
+            <ul>
+              <li><strong>Looker</strong><span data-i18n="stack.g6a">BI y capa semántica</span></li>
+              <li><strong>Looker Studio</strong><span data-i18n="stack.g6b">dashboards self-service</span></li>
+            </ul>
+          </div>
+          <div class="stack-group stack-group-wide reveal">
+            <h3 data-i18n="stack.g7">IA y agentes</h3>
+            <ul>
+              <li>
+                <strong>Gemini Enterprise Agent Platform</strong><span data-i18n="stack.g7a">agentes y ML de punta a punta</span>
+                <em class="was" data-i18n="stack.g7was">antes Vertex AI</em>
+              </li>
+              <li><strong>Gemini Enterprise</strong><span data-i18n="stack.g7b">asistente y búsqueda empresarial</span></li>
+              <li><strong>BigQuery ML</strong><span data-i18n="stack.g7c">machine learning con SQL</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="stack-note reveal" data-i18n="stack.note">
+          Sí, algunos acaban de cambiar de nombre. Mantenerse al día también es parte del servicio.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════ MÉTODO ══════════ -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker" data-i18n="process.kicker">Método</p>
+          <h2 data-i18n="process.title">Cómo trabajamos</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3 data-i18n="process.p1t">Descubrimiento</h3>
+            <p data-i18n="process.p1d">Entendemos tu negocio, tus fuentes y la decisión que quieres habilitar. Sin jerga, con objetivos medibles.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3 data-i18n="process.p2t">Arquitectura</h3>
+            <p data-i18n="process.p2d">Diseño de la plataforma y plan por fases, con estimación de costos de Google Cloud antes de escribir una línea.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3 data-i18n="process.p3t">Construcción</h3>
+            <p data-i18n="process.p3d">Iteraciones cortas con entregas usables: infraestructura como código, CI/CD y documentación desde el inicio.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <h3 data-i18n="process.p4t">Operación y evolución</h3>
+            <p data-i18n="process.p4d">Monitoreo, optimización de costos y acompañamiento a tu equipo para que la plataforma viva y crezca.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ══════════ FUNDADOR ══════════ -->
+    <section class="section section-alt" id="about">
+      <div class="container founder-grid">
+        <div class="founder-visual reveal" aria-hidden="true">
+          <div class="avatar">
+            <svg viewBox="0 0 120 120" fill="none">
+              <circle cx="60" cy="60" r="58" fill="var(--panel-2)" stroke="var(--line-strong)" stroke-width="2"/>
+              <text x="60" y="74" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="40" font-weight="700" fill="var(--turquoise)">RL</text>
+            </svg>
+            <span class="avatar-badge">☁️</span>
+          </div>
+        </div>
+        <div class="founder-copy">
+          <div class="section-head reveal">
+            <p class="kicker" data-i18n="about.kicker">El fundador</p>
+            <h2 data-i18n="about.title">Detrás de Coabana</h2>
+          </div>
+          <p class="reveal" data-i18n="about.p1">
+            Soy Roanny Lamas, Data Engineer especializado en el ecosistema de datos de Google Cloud.
+            Fundé Coabana para ofrecer, con nombre propio, lo que mejor sé hacer: plataformas de datos
+            bien diseñadas, bien construidas y bien operadas.
+          </p>
+          <p class="reveal" data-i18n="about.p2">
+            Trabajo de punta a punta: arquitectura, pipelines, gobierno, BI y agentes de IA.
+            Si tu proyecto vive en Google Cloud — o quiere mudarse — hablemos.
+          </p>
+          <div class="founder-links reveal">
+            <a class="pill-link" href="https://github.com/roanny" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <span data-i18n="about.link1">GitHub personal</span>
+            </a>
+            <!-- TODO: reemplaza el href con la URL exacta de tu perfil de LinkedIn -->
+            <a class="pill-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12.68 0H3.32A3.32 3.32 0 0 0 0 3.32v9.36A3.32 3.32 0 0 0 3.32 16h9.36A3.32 3.32 0 0 0 16 12.68V3.32A3.32 3.32 0 0 0 12.68 0ZM4.94 13.5H2.83V6.34h2.11v7.16ZM3.88 5.43a1.23 1.23 0 1 1 0-2.46 1.23 1.23 0 0 1 0 2.46Zm9.62 8.07h-2.11V9.77c0-.89-.02-2.03-1.24-2.03-1.24 0-1.43.97-1.43 1.97v3.79H6.61V6.34h2.02v.98h.03c.28-.53.97-1.1 2-1.1 2.14 0 2.84 1.41 2.84 3.24v4.04Z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="pill-link" href="https://github.com/Coabana" target="_blank" rel="noopener">
+              <span aria-hidden="true">🌴</span>
+              <span data-i18n="about.link3">Coabana en GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTACTO ══════════ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker" data-i18n="contact.kicker">Contacto</p>
+          <h2 data-i18n="contact.title">Hablemos de tu proyecto</h2>
+          <p class="section-sub" data-i18n="contact.sub">
+            Cuéntame qué quieres lograr con tus datos y te respondo con próximos pasos concretos — sin compromiso.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-channels reveal">
+            <a class="channel" href="mailto:roannylamaslopez@gmail.com">
+              <span class="channel-icon" aria-hidden="true">✉️</span>
+              <span class="channel-body">
+                <strong data-i18n="contact.emailT">Escríbeme un correo</strong>
+                <span>roannylamaslopez@gmail.com</span>
+              </span>
+            </a>
+            <!-- TODO: reemplaza el href con la URL exacta de tu perfil de LinkedIn -->
+            <a class="channel" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              <span class="channel-icon" aria-hidden="true">💼</span>
+              <span class="channel-body">
+                <strong>LinkedIn</strong>
+                <span data-i18n="contact.liD">Conecta conmigo</span>
+              </span>
+            </a>
+            <a class="channel" href="https://github.com/Coabana" target="_blank" rel="noopener">
+              <span class="channel-icon" aria-hidden="true">🐙</span>
+              <span class="channel-body">
+                <strong>GitHub</strong>
+                <span data-i18n="contact.ghD">Explora el código de Coabana</span>
+              </span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="fName" data-i18n="form.name">Nombre</label>
+              <input id="fName" name="name" type="text" required autocomplete="name" data-i18n-placeholder="form.namePh" placeholder="¿Cómo te llamas?">
+            </div>
+            <div class="form-row">
+              <label for="fEmail" data-i18n="form.email">Correo</label>
+              <input id="fEmail" name="email" type="email" required autocomplete="email" placeholder="tu@empresa.com">
+            </div>
+            <div class="form-row">
+              <label for="fMsg" data-i18n="form.msg">Mensaje</label>
+              <textarea id="fMsg" name="message" rows="5" required data-i18n-placeholder="form.msgPh" placeholder="¿Qué quieres construir con tus datos?"></textarea>
+            </div>
+            <!-- honeypot anti-spam -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+            <button class="btn btn-primary btn-block" type="submit" data-i18n="form.send">Enviar mensaje</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top" aria-label="Coabana — inicio">
+        <span class="brand-name">coabana</span>
+      </a>
+      <p class="footer-tag" data-i18n="footer.tag">Ingeniería de datos en Google Cloud, con raíz caribeña.</p>
+      <nav class="footer-links" aria-label="Secciones (pie)">
+        <a href="#services" data-i18n="nav.services">Servicios</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#process" data-i18n="nav.process">Método</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <p class="footer-copy">© <span id="year">2026</span> Coabana · <span data-i18n="footer.made">Hecho con ☕ y 🌴</span></p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

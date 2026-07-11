@@ -21,11 +21,9 @@ Todos los textos viven en **`js/i18n.js`**, en dos diccionarios (`es` y `en`) co
 
 El idioma se detecta automáticamente (navegador → `es`/`en`), se puede forzar con `?lang=en` o `?lang=es` en la URL, y el visitante puede cambiarlo con el botón **EN/ES** del menú.
 
-## ⚠️ Pendientes de configurar
+## ⚠️ Pendiente de configurar
 
-1. **LinkedIn** — En `index.html` hay dos enlaces marcados con `<!-- TODO -->` que apuntan a `https://www.linkedin.com/`. Reemplázalos con la URL exacta de tu perfil.
-2. **Formulario de contacto** — Crea una cuenta gratuita en [Formspree](https://formspree.io), crea un formulario y copia el endpoint en la constante `FORM_ENDPOINT` de `js/main.js`. Mientras esté vacío, el formulario abre la app de correo del visitante con el mensaje ya redactado (funciona, pero es menos cómodo).
-3. **GitHub personal** — El enlace del fundador apunta a `https://github.com/roanny`; verifica que sea tu usuario.
+**Formulario de contacto** — Crea una cuenta gratuita en [Formspree](https://formspree.io), crea un formulario y copia el endpoint en la constante `FORM_ENDPOINT` de `js/main.js`. Mientras esté vacío, el formulario abre la app de correo del visitante con el mensaje ya redactado (funciona, pero es menos cómodo).
 
 ## Publicar en GitHub Pages
 

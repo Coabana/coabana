@@ -12,7 +12,7 @@ document.documentElement.classList.add("js");
    "https://formspree.io/f/abcdwxyz") y pégalo aquí.
    Mientras esté vacío, el formulario abrirá la aplicación de
    correo del visitante con el mensaje ya redactado.           */
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://formspree.io/f/xgojgbly";
 const CONTACT_EMAIL = "roannylamaslopez@gmail.com";
 
 /* ── Idioma ───────────────────────────────────────────── */

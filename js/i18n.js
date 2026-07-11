@@ -107,6 +107,7 @@ const I18N = {
     "about.p2": "Trabajo de punta a punta: arquitectura, pipelines, gobierno, BI y agentes de IA. Si tu proyecto vive en Google Cloud — o quiere mudarse — hablemos.",
     "about.link1": "GitHub personal",
     "about.link3": "Coabana en GitHub",
+    "about.link4": "Mi CV / portfolio",
 
     "contact.kicker": "Contacto",
     "contact.title": "Hablemos de tu proyecto",
@@ -233,6 +234,7 @@ const I18N = {
     "about.p2": "I work end to end: architecture, pipelines, governance, BI and AI agents. If your project lives on Google Cloud — or wants to move there — let's talk.",
     "about.link1": "Personal GitHub",
     "about.link3": "Coabana on GitHub",
+    "about.link4": "My CV / portfolio",
 
     "contact.kicker": "Contact",
     "contact.title": "Let's talk about your project",

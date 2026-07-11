@@ -21,9 +21,11 @@ Todos los textos viven en **`js/i18n.js`**, en dos diccionarios (`es` y `en`) co
 
 El idioma se detecta automáticamente (navegador → `es`/`en`), se puede forzar con `?lang=en` o `?lang=es` en la URL, y el visitante puede cambiarlo con el botón **EN/ES** del menú.
 
-## ⚠️ Pendiente de configurar
+## Formulario de contacto
 
-**Formulario de contacto** — Crea una cuenta gratuita en [Formspree](https://formspree.io), crea un formulario y copia el endpoint en la constante `FORM_ENDPOINT` de `js/main.js`. Mientras esté vacío, el formulario abre la app de correo del visitante con el mensaje ya redactado (funciona, pero es menos cómodo).
+Conectado a [Formspree](https://formspree.io) (proyecto **Coabana** → formulario *Contacto sitio web*); el endpoint vive en la constante `FORM_ENDPOINT` de `js/main.js`. Los envíos llegan a tu correo. Si algún día el endpoint se vacía o falla, el formulario cae a un `mailto:` con el mensaje ya redactado.
+
+> 💡 Cuando el sitio esté publicado, activa **Restrict to Domain** en los ajustes del proyecto de Formspree con el valor `coabana.github.io` para bloquear envíos desde otros dominios.
 
 ## Publicar en GitHub Pages
 

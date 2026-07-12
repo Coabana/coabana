@@ -88,6 +88,9 @@ Las animaciones decorativas (pulse 2.4s, floaty 5.5s, flow 3.2/4.1s) quedan fuer
 - CTA `.btn-primary.btn-small` → `#contact` ("Hablemos"/"Let's talk") en el nav de **ambos** sitios; oculto ≤720px
 - Hamburguesa ≤720px con `aria-expanded` y cierre al navegar
 
+### Preferencias de tema e idioma
+Cascada idéntica en ambos sitios: **parámetro de URL** (`?theme=` / `?lang=`) → **elección manual guardada** (solo se persiste al pulsar el toggle; la detección automática nunca se guarda) → **sistema** (`prefers-color-scheme` con seguimiento en vivo mientras no haya elección manual; `navigator.language` con `es*` → español) → **fallback: oscuro / inglés**. El HTML estático (sin JavaScript) queda en el idioma base de cada sitio: ES en Coabana, EN en el CV.
+
 ### Formulario (solo Coabana)
 - Inputs: fondo `--input-bg`, foco con anillo `--tint-14`
 - **Error**: el JS marca `aria-invalid="true"` al validar → borde coral + anillo `--tint-coral-14`; se limpia al escribir

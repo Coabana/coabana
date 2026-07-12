@@ -7,7 +7,7 @@
 const I18N = {
   es: {
     "meta.title": "Coabana — Ingeniería de Datos en Google Cloud",
-    "meta.desc": "Coabana diseña, construye y opera plataformas de datos en Google Cloud: BigQuery, Dataflow, Composer, Looker y agentes de IA sobre tus datos.",
+    "meta.desc": "Coabana diseña, construye y opera ecosistemas de datos escalables y bien gobernados en Google Cloud: BigQuery, Dataflow, Composer, Looker y agentes de IA.",
 
     "nav.services": "Servicios",
     "nav.stack": "Stack",
@@ -23,11 +23,11 @@ const I18N = {
     "hero.h1a": "Del dato crudo",
     "hero.h1b": "a la ",
     "hero.h1c": "decisión.",
-    "hero.sub": "Coabana es un estudio de ingeniería de datos especializado en Google Cloud. Diseñamos, construimos y operamos la plataforma que convierte tus datos en resultados: pipelines confiables, analítica clara y agentes de IA sobre tu propia información.",
+    "hero.sub": "Coabana es un estudio de ingeniería de datos especializado en Google Cloud. Diseñamos, construimos y operamos ecosistemas de datos escalables y bien gobernados, que convierten tu información en resultados: pipelines confiables, analítica clara y agentes de IA sobre tus propios datos.",
     "hero.cta1": "Hablemos de tu proyecto",
     "hero.cta2": "Ver servicios",
     "hero.strip": "Construido sobre",
-    "hero.card": "tu-plataforma-de-datos",
+    "hero.card": "tu-ecosistema-de-datos",
     "hero.chip1": "Streaming en tiempo real",
     "hero.chip2": "Datos gobernados",
     "hero.chip3": "IA con tus datos",
@@ -35,7 +35,7 @@ const I18N = {
     "brand.kicker": "El nombre",
     "brand.title": "Una tierra grande y fértil",
     "brand.p1": "«Coabana» viene del taíno: gran lugar de tierra fértil — uno de los orígenes que se atribuyen al nombre de Cuba. Nos gusta pensar los datos de la misma manera: una tierra que, bien cultivada, produce.",
-    "brand.p2": "Coabana es la marca desde la que Roanny Lamas, Data Engineer especializado en Google Cloud, ofrece servicios de ingeniería de datos de punta a punta: desde la arquitectura inicial hasta la operación diaria de tu plataforma.",
+    "brand.p2": "Coabana es la marca desde la que Roanny Lamas, Data Engineer especializado en Google Cloud, ofrece servicios de ingeniería de datos de punta a punta: desde la arquitectura inicial hasta la operación diaria de tu ecosistema de datos.",
     "brand.b1t": "Raíz caribeña, estándar global",
     "brand.b1d": "Cercanía y claridad al comunicar; rigor de ingeniería al construir.",
     "brand.b2t": "Especialistas, no generalistas",
@@ -57,7 +57,8 @@ const I18N = {
     "services.s5t": "Analítica y BI",
     "services.s5d": "Modelos semánticos y dashboards que el negocio usa de verdad, con métricas consistentes en toda la empresa.",
     "services.s6t": "IA y agentes sobre tus datos",
-    "services.s6d": "Agentes conversacionales y automatizaciones ancladas en tu plataforma: pregunta a tus datos en lenguaje natural, con respuestas gobernadas.",
+    "services.s6d": "Tu entrada a la era agéntica: agentes conversacionales y automatizaciones anclados a tu ecosistema — pregunta a tus datos en lenguaje natural, con respuestas gobernadas.",
+    "services.note": "En la era agéntica, un agente es tan bueno como el ecosistema de datos que lo alimenta. Por eso construimos primero los cimientos.",
 
     "stack.kicker": "Herramientas",
     "stack.title": "El portafolio de datos de Google Cloud, al día",
@@ -135,7 +136,7 @@ const I18N = {
 
   en: {
     "meta.title": "Coabana — Data Engineering on Google Cloud",
-    "meta.desc": "Coabana designs, builds and operates data platforms on Google Cloud: BigQuery, Dataflow, Composer, Looker and AI agents grounded in your data.",
+    "meta.desc": "Coabana designs, builds and operates scalable, well-governed data ecosystems on Google Cloud: BigQuery, Dataflow, Composer, Looker and AI agents.",
 
     "nav.services": "Services",
     "nav.stack": "Stack",
@@ -151,11 +152,11 @@ const I18N = {
     "hero.h1a": "From raw data",
     "hero.h1b": "to ",
     "hero.h1c": "decisions.",
-    "hero.sub": "Coabana is a data engineering studio specialized in Google Cloud. We design, build and operate the platform that turns your data into results: reliable pipelines, clear analytics and AI agents grounded in your own information.",
+    "hero.sub": "Coabana is a data engineering studio specialized in Google Cloud. We design, build and operate scalable, well-governed data ecosystems that turn your information into results: reliable pipelines, clear analytics and AI agents grounded in your own data.",
     "hero.cta1": "Let's talk about your project",
     "hero.cta2": "See services",
     "hero.strip": "Built on",
-    "hero.card": "your-data-platform",
+    "hero.card": "your-data-ecosystem",
     "hero.chip1": "Real-time streaming",
     "hero.chip2": "Governed data",
     "hero.chip3": "AI on your data",
@@ -163,7 +164,7 @@ const I18N = {
     "brand.kicker": "The name",
     "brand.title": "A great, fertile land",
     "brand.p1": "“Coabana” comes from the Taíno language: a great place of fertile land — one of the attributed origins of the name of Cuba. We like to think about data the same way: land that produces when it is well cultivated.",
-    "brand.p2": "Coabana is the brand under which Roanny Lamas, a Data Engineer specialized in Google Cloud, offers end-to-end data engineering services: from the initial architecture to the day-to-day operation of your platform.",
+    "brand.p2": "Coabana is the brand under which Roanny Lamas, a Data Engineer specialized in Google Cloud, offers end-to-end data engineering services: from the initial architecture to the day-to-day operation of your data ecosystem.",
     "brand.b1t": "Caribbean roots, global standards",
     "brand.b1d": "Warm and clear in communication; rigorous engineering in every build.",
     "brand.b2t": "Specialists, not generalists",
@@ -185,7 +186,8 @@ const I18N = {
     "services.s5t": "Analytics & BI",
     "services.s5d": "Semantic models and dashboards the business actually uses, with consistent metrics across the company.",
     "services.s6t": "AI & agents on your data",
-    "services.s6d": "Conversational agents and automations anchored to your platform: ask your data questions in natural language, with governed answers.",
+    "services.s6d": "Your gateway to the agentic era: conversational agents and automations anchored to your ecosystem — ask your data questions in natural language, with governed answers.",
+    "services.note": "In the agentic era, an agent is only as good as the data ecosystem beneath it. That's why we build the foundations first.",
 
     "stack.kicker": "Tooling",
     "stack.title": "The Google Cloud data portfolio, up to date",

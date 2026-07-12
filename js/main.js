@@ -23,7 +23,8 @@ function detectLang() {
   if (urlLang && I18N[urlLang]) return urlLang;
   const saved = localStorage.getItem(LANG_KEY);
   if (saved && I18N[saved]) return saved;
-  return (navigator.language || "es").toLowerCase().startsWith("es") ? "es" : "en";
+  // es* → español; cualquier otro idioma (o indeterminable) → inglés
+  return (navigator.language || "en").toLowerCase().startsWith("es") ? "es" : "en";
 }
 
 let currentLang = detectLang();
@@ -32,7 +33,6 @@ function applyLang(lang) {
   const dict = I18N[lang];
   if (!dict) return;
   currentLang = lang;
-  try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* modo privado */ }
 
   document.documentElement.lang = lang;
   document.title = dict["meta.title"];
@@ -67,7 +67,10 @@ function applyLang(lang) {
 }
 
 document.getElementById("langToggle").addEventListener("click", () => {
-  applyLang(currentLang === "es" ? "en" : "es");
+  const next = currentLang === "es" ? "en" : "es";
+  applyLang(next);
+  // Solo la elección manual se guarda; la detección automática no
+  try { localStorage.setItem(LANG_KEY, next); } catch (e) { /* modo privado */ }
 });
 
 applyLang(currentLang);
@@ -93,7 +96,6 @@ function applyTheme(theme) {
   currentTheme = theme;
   if (theme === "light") document.documentElement.setAttribute("data-theme", "light");
   else document.documentElement.removeAttribute("data-theme");
-  try { localStorage.setItem(THEME_KEY, theme); } catch (e) { /* modo privado */ }
 
   // El botón muestra el tema al que se puede cambiar (como el de idioma)
   const themeBtn = document.getElementById("themeToggle");
@@ -109,10 +111,27 @@ function applyTheme(theme) {
 }
 
 document.getElementById("themeToggle").addEventListener("click", () => {
-  applyTheme(currentTheme === "light" ? "dark" : "light");
+  const next = currentTheme === "light" ? "dark" : "light";
+  applyTheme(next);
+  // Solo la elección manual se guarda; la detección automática no
+  try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* modo privado */ }
 });
 
 applyTheme(currentTheme);
+
+// Mientras no haya elección manual ni ?theme= en la URL,
+// el tema sigue al sistema en vivo
+if (window.matchMedia) {
+  const systemTheme = window.matchMedia("(prefers-color-scheme: light)");
+  if (systemTheme.addEventListener) {
+    systemTheme.addEventListener("change", (e) => {
+      let manual = null;
+      try { manual = localStorage.getItem(THEME_KEY); } catch (err) { /* modo privado */ }
+      const urlTheme = new URLSearchParams(location.search).get("theme");
+      if (!manual && !urlTheme) applyTheme(e.matches ? "light" : "dark");
+    });
+  }
+}
 
 /* ── Navegación: fondo al hacer scroll ────────────────── */
 const nav = document.getElementById("nav");

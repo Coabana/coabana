@@ -27,10 +27,11 @@ const I18N = {
     "hero.cta1": "Hablemos de tu proyecto",
     "hero.cta2": "Ver servicios",
     "hero.strip": "Construido sobre",
+    "hero.stripMore": "y más →",
     "hero.card": "tu-plataforma-de-datos",
-    "hero.chip1": "Streaming en tiempo real",
+    "hero.chip1": "Datos en tiempo real",
     "hero.chip2": "Datos gobernados",
-    "hero.chip3": "IA con tus datos",
+    "hero.chip3": "Agentes sobre tus datos",
 
     "brand.kicker": "El nombre",
     "brand.title": "Una tierra grande y fértil",
@@ -58,6 +59,7 @@ const I18N = {
     "services.s5d": "Modelos semánticos y dashboards que el negocio usa de verdad, con métricas consistentes en toda la empresa.",
     "services.s6t": "IA y agentes sobre tus datos",
     "services.s6d": "Agentes conversacionales y automatizaciones ancladas en tu plataforma: pregunta a tus datos en lenguaje natural, con respuestas gobernadas.",
+    "services.note": "Construimos los cimientos para tu entrada a la era agéntica.",
 
     "stack.kicker": "Herramientas",
     "stack.title": "El portafolio de datos de Google Cloud, al día",
@@ -155,10 +157,11 @@ const I18N = {
     "hero.cta1": "Let's talk about your project",
     "hero.cta2": "See services",
     "hero.strip": "Built on",
+    "hero.stripMore": "and more →",
     "hero.card": "your-data-platform",
-    "hero.chip1": "Real-time streaming",
+    "hero.chip1": "Real-time data",
     "hero.chip2": "Governed data",
-    "hero.chip3": "AI on your data",
+    "hero.chip3": "Agents on your data",
 
     "brand.kicker": "The name",
     "brand.title": "A great, fertile land",
@@ -186,6 +189,7 @@ const I18N = {
     "services.s5d": "Semantic models and dashboards the business actually uses, with consistent metrics across the company.",
     "services.s6t": "AI & agents on your data",
     "services.s6d": "Conversational agents and automations anchored to your platform: ask your data questions in natural language, with governed answers.",
+    "services.note": "We build the foundations for your entry into the agentic era.",
 
     "stack.kicker": "Tooling",
     "stack.title": "The Google Cloud data portfolio, up to date",
